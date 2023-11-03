@@ -1,11 +1,11 @@
-## IMPLEMENTATION OF CPU SCHEDULING ALGORITHM
+# IMPLEMENTATION OF CPU SCHEDULING ALGORITHM
 ## FIRST COME FIRST SERVE(FCFS) SCHEDULING
 
 
-## AIM:
+### AIM:
 To implement First-Come-First-Serve (FCFS) Scheduling
 
-## ALGORITHM:
+### ALGORITHM:
 Start the process
 
 Accept the number of processes in the ready queue
@@ -23,7 +23,8 @@ Display the process ID, burst time, waiting time and turnaround time for the cur
 Calculate the average waiting time and average turnaround time
 
 Stop the process
-## PROGRAM:
+
+### PROGRAM:
 ```
 # Get the number of processes from the user
 n = int(input("Enter number of processes: "))
@@ -69,19 +70,19 @@ avg_tat = total_tat / n
 print(f"Average waiting time = {avg_wt}")
 print(f"Average turnaround time = {avg_tat}")
 ```
-## OUTPUT:
+### OUTPUT:
 ![272647726-bd4d6101-b830-4aa6-ac62-15827e35009d](https://github.com/JAYAVARTHAN-P/EX.5-IMPLEMENTATION-OF-CPU-SCHEDULING-ALGORITHMS/assets/121369281/29d09aec-1662-4e01-9ed5-e07921c82d08)
 
 
-## RESULT:
+### RESULT:
 First-Come-First-Serve Scheduling is implemented successfully.
 
 ## Shortest Job First (SJF) Preemptive Scheduling
 
-## AIM:
+### AIM:
 To implement Shortest Job First (SJF) Preemptive Scheduling
 
-## ALGORITHM:
+### ALGORITHM:
 Start the process
 
 Accept the number of processes in the ready queue
@@ -147,22 +148,22 @@ avg_tat = total_tat / n
 print(f"\nAverage Waiting Time = {avg_wt:.2f}")
 print(f"Average Turnaround Time = {avg_tat:.2f}")
 ```
-## OUTPUT:
+### OUTPUT:
 ![272655574-a44410a0-f001-4f05-ae9b-f870766e18c5](https://github.com/JAYAVARTHAN-P/EX.5-IMPLEMENTATION-OF-CPU-SCHEDULING-ALGORITHMS/assets/121369281/720c913e-67be-4f89-8adb-897c074eb527)
 
 
-## RESULT:
+### RESULT:
 Shortest Job First (SJF) preemptive scheduling is implemented successfully.
 
 ## Shortest Job First (SJF) Non-Preemptive Scheduling
 
-## AIM:
+### AIM:
 To implement Shortest Job First (SJF) Non-Preemptive Scheduling
 
-## ALGORITHM:
+### ALGORITHM:
 
 Shortest Job First (SJF) Non-Preemptive Scheduling is a scheduling algorithm that aims to minimize the average waiting time of processes in a CPU scheduling environment. It selects the process with the shortest burst time to execute first. The algorithm operates in a non-preemptive manner, meaning that once a process starts executing, it continues until it completes its entire burst time. To implement SJF, you first determine the burst time for each process and then sort the processes in ascending order of their burst times. The process with the shortest burst time is scheduled to run next. This process continues until all processes have been executed. SJF non-preemptive scheduling is effective in minimizing waiting times for shorter tasks but can lead to longer waiting times for longer tasks if they arrive early in the queue.
-## PROGRAM:
+### PROGRAM:
 ```
 def sjf_non_preemptive(processes, burst_time):
     n = len(processes)
@@ -215,16 +216,16 @@ if __name__ == "__main__":
 
 
 
-## RESULT:
+### RESULT:
 Shortest Job First (SJF) Non-preemptive scheduling is implemented successfully.
 
-## AIM: 
+### AIM: 
 To implement Round Robin (RR) Scheduling
 
 ## ALGORITHM:
 Start the process Get the number of elements to be inserted Get the value for burst time for individual processes Get the value for time quantum Make the CPU scheduler go around the ready queue allocating CPU to each process for the time interval specified Make the CPU scheduler pick the first process and set time to interrupt after quantum. And after it's expiry dispatch the process If the process has burst time less than the time quantum then the process is released by the CPU If the process has burst time greater than time quantum then it is interrupted by the OS and the process is put to the tail of ready queue and the schedule selects next process from head of the queue Calculate the total and average waiting time and turnaround time Display the results
 
-## PROGRAM:
+### PROGRAM:
 ```
 from collections import deque
 
@@ -284,18 +285,18 @@ if __name__ == "__main__":
 
 ```
 
-## OUTPUT:
+### OUTPUT:
 
 ![Screenshot (116)](https://github.com/JAYAVARTHAN-P/EX.5-IMPLEMENTATION-OF-CPU-SCHEDULING-ALGORITHMS/assets/121369281/5c3d4d80-04e7-48c7-a08a-be0a98a5df38)
 
 
-## RESULT:
+### RESULT:
 Round Robin (RR) Scheduling is implemented successfully.
 
-## AIM: 
+### AIM: 
 To implement Priority Preemptive Scheduling
 
-## ALGORITHM:
+### ALGORITHM:
 ```
 1.Input process information for n processes and initialize variables. 
 2.Implement priority-based scheduling to determine process execution order.
@@ -303,7 +304,7 @@ To implement Priority Preemptive Scheduling
 4.Compute the average waiting time and average turnaround time. 5.Display the results, including process details and averages
 ```
 
-## PROGRAM:
+### PROGRAM:
 
 ```
 def priority_preemptive(processes, burst_time, priorities):
@@ -354,21 +355,21 @@ if __name__ == "__main__":
 
 ```
 
-## OUTPUT:
+### OUTPUT:
 
 ![Screenshot (117)](https://github.com/JAYAVARTHAN-P/EX.5-IMPLEMENTATION-OF-CPU-SCHEDULING-ALGORITHMS/assets/121369281/01c7878e-f418-4595-968f-348ac91de06f)
 
 
-## RESULT: 
+### RESULT: 
 Priority Preemptive scheduling is implemented successfully.
 
-## AIM: 
+### AIM: 
 To implement Priority Non-Preemptive Scheduling
 
-## ALGORITHM:
+### ALGORITHM:
 In Priority Non-Preemptive Scheduling, each process is associated with a priority value, which is used to determine the order in which processes are executed. The scheduler selects the process with the highest priority from the ready queue and allows it to execute until completion. If multiple processes have the same highest priority, they are executed in the order they arrived, following a FCFS approach. This algorithm continues until all processes have completed their execution.
 
-## PROGRAM:
+### PROGRAM:
 ```
 def priority_non_preemptive(processes, burst_time, priorities):
     n = len(processes)
@@ -418,11 +419,11 @@ if __name__ == "__main__":
 ```
 
 
-## OUTPUT:
+### OUTPUT:
 
 ![Screenshot (118)](https://github.com/JAYAVARTHAN-P/EX.5-IMPLEMENTATION-OF-CPU-SCHEDULING-ALGORITHMS/assets/121369281/daa4af50-f541-4355-9c44-dd77275e8fde)
 
 
-## RESULT: 
+### RESULT: 
 Priority Non-preemptive scheduling is implemented successfully.
 
