@@ -1,8 +1,10 @@
-# Aim
+# EX.5-IMPLEMENTATION-OF-CPU-SCHEDULING-ALGORITHMS
+
+## Aim
 
 To implement the first come first serve scheduling algorithm
 
-# Algorithm
+## Algorithm
 1. Start the process
 2. Get the number of processes to be inserted
 3. Get the value for burst time of each process from the user
@@ -17,11 +19,11 @@ current process)
 9. Display the values
 10. Stop the process
 
-# GANTT CHART
+## GANTT CHART
 
 ![image](https://github.com/Harsayazheni/EX.5-IMPLEMENTATION-OF-CPU-SCHEDULING-ALGORITHMS/assets/118708467/4cf27afa-57b7-4d4b-a04e-367b6d127f00)
 
-# PROGRAM
+## PROGRAM
 ```
 #include<stdio.h>
 int main()
@@ -60,19 +62,19 @@ printf("\n\nAverage Waiting Time=%f",avg_wt);
 printf("\nAverage Turnaround Time=%f\n",avg_tat);
 }
 ```
-# OUTPUT
+## OUTPUT
 
 ![image](https://github.com/Harsayazheni/EX.5-IMPLEMENTATION-OF-CPU-SCHEDULING-ALGORITHMS/assets/118708467/a667c592-6abd-41ae-b97c-dff48e236c3c)
 
-# RESULT
+## RESULT
 
 Thus, the first come first serve scheduling algorithm is implemented successfully.
 
-# Aim
+## Aim
 
 To implement the shortest job first scheduling algorithm
 
-# Algorithm
+## Algorithm
 1. Start the process
 2. Get the number of processes to be inserted
 3. Get the value for burst time of each process from the user
@@ -87,12 +89,12 @@ current process)
 9. Display the values
 10. Stop the process
 
-# GANTT CHART
+## GANTT CHART
 
 ![image](https://github.com/Harsayazheni/EX.5-IMPLEMENTATION-OF-CPU-SCHEDULING-ALGORITHMS/assets/118708467/0f412720-6a23-41a4-85d0-ec25adf68845)
 
 
-# PROGRAM
+## PROGRAM
 ```
 #include<stdio.h>
 int main()
@@ -152,15 +154,15 @@ printf("\nAverage Turnaround Time=%f\n",avg_tat);
 ![image](https://github.com/Harsayazheni/EX.5-IMPLEMENTATION-OF-CPU-SCHEDULING-ALGORITHMS/assets/118708467/523eb466-a2a3-4493-a01f-b4dd4afbae9b)
 
 
-# RESULT
+## RESULT
 
 Thus, the first come shortest job first algorithm is implemented successfully.
 
-# Aim
+## Aim
 
 To implement the priority scheduling algorithm
 
-# Algorithm
+## Algorithm
 1. Start the process
 2. Get the number of processes to be inserted
 3. Get the corresponding priority of processes
@@ -171,12 +173,12 @@ to execute first
 7. Display the values
 8. Stop the process
 
-# GANTT CHART
+## GANTT CHART
 
 ![image](https://github.com/Harsayazheni/EX.5-IMPLEMENTATION-OF-CPU-SCHEDULING-ALGORITHMS/assets/118708467/87cc32d4-9b10-4f25-9e24-b8cc372f74d9)
 
 
-# PROGRAM
+## PROGRAM
 ```
 #include<stdio.h>
 int main()
@@ -237,21 +239,21 @@ printf("\n\nAverage Waiting Time=%f",avg_wt);
 printf("\nAverage Turnaround Time=%f\n",avg_tat);
 }
 ```
-# OUTPUT
+## OUTPUT
 
 ![image](https://github.com/Harsayazheni/EX.5-IMPLEMENTATION-OF-CPU-SCHEDULING-ALGORITHMS/assets/118708467/0e8eccaa-dfad-4e7d-b817-65a835968bc0)
 
 
 
-# RESULT
+## RESULT
 
 Thus, the priority algorithm is implemented successfully.
 
-# Aim
+## Aim
 
 To implement the round robin scheduling algorithm
 
-# Algorithm
+## Algorithm
 1. Start the process
 2. Get the number of elements to be inserted
 3. Get the value for burst time for individual processes
@@ -268,12 +270,12 @@ process from head of the queue
 9. Calculate the total and average waiting time and turnaround time
 10. Display the results
 
-# GANTT CHART
+## GANTT CHART
 
 ![image](https://github.com/Harsayazheni/EX.5-IMPLEMENTATION-OF-CPU-SCHEDULING-ALGORITHMS/assets/118708467/21e4cb71-96d8-49ed-be60-ebc2af91ed9b)
 
 
-# PROGRAM
+## PROGRAM
 ```
 #include<stdio.h>  
 #include<conio.h>  
@@ -344,11 +346,11 @@ printf("\n Average Waiting Time: \t%f", avg_tat);
 getch();  
 }  
 ```
-# OUTPUT
+## OUTPUT
 
 ![image](https://github.com/Harsayazheni/EX.5-IMPLEMENTATION-OF-CPU-SCHEDULING-ALGORITHMS/assets/118708467/67af8c83-3863-4e6c-a650-e8c032bcf044)
 
-# RESULT
+## RESULT
 
 Thus, the round robin algorithm is implemented successfully.
 
